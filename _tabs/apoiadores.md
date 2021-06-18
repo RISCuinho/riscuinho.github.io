@@ -1,7 +1,7 @@
 ---
 title: Apoiadores
 icon: fas fa-info
-order: 5
+order: 2
 ---
 
 O Projeto RISCuinho é mantido com os recursos próprios de [Carlos Delfino](https://carlosdelfino.eti.br), obtidos com seus cursos de introdução a programação, Basicão da Eletrônica, entre outros.

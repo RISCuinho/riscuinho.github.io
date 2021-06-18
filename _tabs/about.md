@@ -1,7 +1,7 @@
 ---
 title: Quem Somos
 icon: fas fa-info
-order: 4
+order: 1
 ---
 
 O projeto RISCuinho surgiu da necessidade de se ter um microcontrolador de baixo custo com multiplos cores e que permitisse o desenvolvendo educacional usando o freeRTOS.
