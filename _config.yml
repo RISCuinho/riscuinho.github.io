@@ -134,6 +134,12 @@ defaults:
       layout: page
       permalink: /:title/
       dynamic_title: true    # Hide title in mobile screens.
+  -
+    scope:
+      path: ''
+      type: pages
+    values:
+      layout: page
 
 sass:
   style: compressed
@@ -146,6 +152,9 @@ compress_html:
   blanklines: false
   ignore:
     envs: [development]
+
+include:
+  - _pages
 
 exclude:
   - '*.gem'
