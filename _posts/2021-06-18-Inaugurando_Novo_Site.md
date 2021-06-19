@@ -46,7 +46,7 @@ O **RISC**uinho também é um core de um 3 estágio de um único ciclo de clock,
 
 ## Exemplos
 
-A pasta [examples](./examples) possui exemplos para testes, na sua maioria obtidos no curso oferecido pela [Vicilogic][https://www.vicilogic.com/], tais exemplos podem ser obtidos no link [https://www.vicilogic.com/vicilearn/run_step/?s_id=1452](https://www.vicilogic.com/vicilearn/run_step/?s_id=1452)
+A pasta `examples`, no projeto [core do RISCuinho](https://github.com/RISCuinho/cores), descrita aqui na categoria ["exemplos"](/categories/exemplos/), possui exemplos para testes, na sua maioria obtidos no curso oferecido pela [Vicilogic][https://www.vicilogic.com/], tais exemplos podem ser obtidos no link [https://www.vicilogic.com/vicilearn/run_step/?s_id=1452](https://www.vicilogic.com/vicilearn/run_step/?s_id=1452), para detalhes de cada exemplo que foi usado pra teste, entre no anterior.
 
 ## Simulação
 
