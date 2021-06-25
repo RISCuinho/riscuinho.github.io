@@ -20,10 +20,8 @@ title: RISCuinho                        # the main title
 tagline: A Scrach in Microcontroler Universe # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  A minimal, portfolio, sidebar,
-  bootstrap Jekyll theme with responsive web design
-  and focuses on text presentation.
-
+   **RISC**uinho - A scratch in the possibilities in the universe of microcontrollers 
+   
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://riscuinho.github.io'
 
@@ -44,10 +42,10 @@ social:
     - https://github.com/riscuinho      # change to your github homepage
     # Uncomment below to add more social links
     - https://carlosdelfino.eti.br
-    # - https://www.facebook.com/username
+    - https://www.facebook.com/basicaodaeletronica
     # - https://www.linkedin.com/in/username
 
-google_site_verification: google_meta_tag_verification # change to your verification string
+google_site_verification: 5zRTHm8LU2zXC-hlZtBJqy-wiASgu6ER5PbCu67hqcM # change to your verification string
 # --------------------------
 
 google_analytics:
@@ -85,8 +83,8 @@ avatar: /assets/images/logos/riscv.jpg
 toc: true
 
 disqus:
-  comments: false  # boolean type, the global switch for posts comments.
-  shortname: ''    # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+  comments: true # boolean type, the global switch for posts comments.
+  shortname: 'riscuinho'    # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 paginate: 10
 
