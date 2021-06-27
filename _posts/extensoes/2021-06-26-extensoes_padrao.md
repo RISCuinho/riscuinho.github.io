@@ -30,7 +30,7 @@ image:
 |J      |Standard Extension for Dynamically Translated Languages    |0.0     |Open    |Undefined Yet|
 |T      |Standard Extension for Transactional Memory                |0.0     |Open    |Undefined Yet|
 |P      |Standard Extension for Packed-SIMD Instructions            |0.1     |Open    |Undefined Yet|
-|V      |Standard Extension for Vector Operations                   |0.7     |Open    |186|
+|V      |[Standard Extension for Vector Operations](/posts/extensao_padrao_operacoes_com_vetores) |0.7     |Open    |186|
 |N      |Standard Extension for User-Level Interrupts               |1.1     |Open    |3  |
 |H      |Standard Extension for Hypervisor                          |0.0     |Open    |2  |
 |S      |Standard Extension for Supervisor-level Instructions       |1.12    |Open    |7  |
