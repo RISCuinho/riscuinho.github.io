@@ -35,7 +35,11 @@ image:
 |H      |Standard Extension for Hypervisor                          |0.0     |Open    |2  |
 |S      |Standard Extension for Supervisor-level Instructions       |1.12    |Open    |7  |
                                                                              
-                                                                             
+## Compondo multiplas extensões
+
+As extensões acima podem ser compostas formando processadores especializados ou de uso especificos direcionados. O processador mais generico é a RV32G que é composto pelas extensões IMFAD, se for 64 bits é RV64G e se for 128 bits é RV128G.
+
+As demais extensões devem ser referidas mantendo a mesma ordem que é listada na tabela acima, portando o correto é usar **RV32GJVN**, e não *RV32JNVG*.                                                                               
                                                                              
                                                                              
                                                                              
