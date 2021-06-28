@@ -2,6 +2,7 @@
 redirect_from: /gcc
 title: Riscuinho GCC
 date: 2021-06-18 18:40:00 -0300
+author: Carlos Delfino
 categories: [gcc]
 tags: [gcc, binutils, as, gdb]     # TAG names should always be lowercase
 math: false
@@ -20,3 +21,7 @@ Gcc e Binutils para o RISCuinho foram compilados multi-lib para **rv32i** com **
 ## Issues
 
 Caso esteja tendo algum problemas com esta versão especifica do GCC, há duas opções, deixar detalhes do problemas no comentário abaixo, ou usar a versão oficial.
+
+## Referências
+
+- https://github.com/RISCuinho/riscv-gnu-toolchain
