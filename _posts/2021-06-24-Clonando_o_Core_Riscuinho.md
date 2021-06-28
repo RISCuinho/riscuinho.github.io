@@ -2,7 +2,7 @@
 title: Clonando o Core RISCuinho
 date: 2021-06-24 23:40:00 -0300
 categories: [core]
-tags: [core, risc-v, clone, git, github, analise, verilog]
+tags: [core, clone, git, github, analise, verilog, hdl, desenvolvimento, colaborando]
 math: false
 comments: false
 toc: true
