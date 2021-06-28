@@ -8,7 +8,7 @@ O Projeto RISCuinho é mantido com os recursos próprios de [Carlos Delfino](htt
 
 Porém tais recursos tem se tornado escassos nos ultimos 6 anos com a construção da sede de seu projeto na cidade de Aquiraz, em especial pela pouca demanda de aulas presenciais, e também com o advento da panemia que inviabilizou tal modalidade.
 
-Caso deseje apoiar o projeto, desejo o convite para entrar em contato pelo e-mail consultoria@carlosdelfino.eti.br ou Whatsapp (+55 85) 985205490, ou fazendo uma daoção em dinheiro, qualquer continua que julgar adequada,  diretamente na conta PIX, explicado abaixo ou comprando itens indicados por URLs personalizadas que geram comissões nos sites de vendas e podem ser revertidas em compras de componentes para ministrar aulas e oficinas.
+Caso deseje apoiar o projeto, desejo o convite para entrar em contato pelo e-mail consultoria@carlosdelfino.eti.br ou [Whatsapp (+55 85) 985205490](https://wa.me/message/FMLUK6YYWLXHI1), ou fazendo uma daoção em dinheiro, qualquer continua que julgar adequada,  diretamente na conta PIX, explicado abaixo ou comprando itens indicados por URLs personalizadas que geram comissões nos sites de vendas e podem ser revertidas em compras de componentes para ministrar aulas e oficinas.
 
 ## Demandas no momento
 
