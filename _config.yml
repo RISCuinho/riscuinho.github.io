@@ -34,14 +34,16 @@ twitter:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: riscuinho
+  name: Carlos Delfino 
   email: riscuinho@carlosdelfino.eti.br # change to your email address
   links:
     # The first element serves as the copyright owner's link
+    - https://carlosdelfino.eti.br
+    - https://twitter.com/fullsrv       # change to your twitter homepage
     - https://twitter.com/verilognize   # change to your twitter homepage
+    - https://github.com/carlosdelfino
     - https://github.com/riscuinho      # change to your github homepage
     # Uncomment below to add more social links
-    - https://carlosdelfino.eti.br
     - https://www.facebook.com/basicaodaeletronica
     # - https://www.linkedin.com/in/username
 
