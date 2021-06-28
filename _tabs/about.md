@@ -1,4 +1,5 @@
 ---
+redirect_from: /quemsomos/
 title: Quem Somos
 icon: fas fa-info
 order: 1
