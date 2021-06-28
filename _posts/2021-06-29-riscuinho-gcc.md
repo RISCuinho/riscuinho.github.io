@@ -10,7 +10,7 @@ comments: true
 toc: true
 mermaid: true
 image:
-  src: /assets/images/logos/RISCuinho-Logo.png
+  src: /assets/images/logos/riscv_gcc.jpg
   alt: RISCuinho
 ---
 
