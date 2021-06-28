@@ -26,7 +26,7 @@ Uses B-type format, e.g, branch instruction at PC = 08
   bne x1, x0, decrAndBNELoop
   instruction(31:0) = 0xfe009ee3
 
-B-type  imm(12¦10:5)	 rs2	 rs1   funct3  imm(4:1¦11)	 opcode	
+B-type  imm(12¦10:5)  rs2   rs1   funct3  imm(4:1¦11)  opcode  
 hex (0x):    f      e     0       0     9        e         e      3
 bin (ob): (1 111  111)(0 0000) (0000 1)(001)   (1110    1) (110 0011)
 
@@ -58,10 +58,10 @@ beq x0,x0, start
 Post-assembly program listing
 PC instruction  basic assembly   original assembly    Notes
       (31:0)        code              code 
-00 0x00300093	addi x1 x0 3	addi x1, x0, 3
-04 0xfff08093	addi x1 x1 -1	addi x1, x1, -1
-08 0xfe009ee3	bne x1 x0 -4	bne x1, x0, loop1
-0c 0xfe000ae3	beq x0 x0 -12	beq x0,x0, start
+00 0x00300093  addi x1 x0 3   addi x1, x0, 3
+04 0xfff08093  addi x1 x1 -1  addi x1, x1, -1
+08 0xfe009ee3  bne x1 x0 -4   bne x1, x0, loop1
+0c 0xfe000ae3  beq x0 x0 -12  beq x0,x0, start
 
 ==============================
 Venus 'dump' program binary. No of instructions n = 11
