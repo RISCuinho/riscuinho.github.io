@@ -1,7 +1,7 @@
 ---
 title: Global Offset Table
 date: 2021-06-18 18:40:00 -0300
-categories: [Assembly]
+categories: [assembly]
 tags: [assembly, got, pic, pie]     # TAG names should always be lowercase
 math: false
 comments: false

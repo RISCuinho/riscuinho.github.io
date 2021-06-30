@@ -14,9 +14,20 @@ image:
   alt: RISCuinho
 ---
 
-Gcc e Binutils para o RISCuinho foram compilados multi-lib para **rv32i** com **ilp32**; **rv32im** com **ilp32** and **rv32icmv** with **ilp32** que reusará este conjunto multi-lib. 
+Gcc e Binutils para o RISCuinho foram compilados multi-lib para **rv32i** com **ilp32**; **rv32im** com **ilp32** and **rv32imc** with **ilp32** que reusará este conjunto multi-lib. 
 
-./configure --with-multilib-generator="rv32i-ilp32-rv32im-cmv" --with-arch=rv32imcv --with-abi=ilp32
+configure --prefix=/opt/riscuinho --host=i686-riscuinho-linux-gnu  --program-prefix="riscuinho-" --with-multilib-generator="rv32i-ilp32-rv32im-c" --with-pkgversion="RISCuinho-GCC" --with-bugurl="https://riscuinho.github.io/gcc" --with-documentation-root-url="https://riscuinho.github.io/gcc" --with-changes-root-url="https://riscuinho.github.io/gcc"
+
+
+Edite o arquivo Makefile gerado e altere as linhas de forma que fiquem similares:
+
+```
+WITH_ARCH ?= --with-arch=rv32imc
+WITH_ABI ?= --with-abi=ilp32
+
+MULTILIB_GEN := rv32i-ilp32-rv32im-c
+
+NEWLIB_MULTILIB_NAMES := rv32imcv-ilp32
 
 ## Issues
 
@@ -25,3 +36,4 @@ Caso esteja tendo algum problemas com esta versão especifica do GCC, há duas o
 ## Referências
 
 - https://github.com/RISCuinho/riscv-gnu-toolchain
+- https://gcc.gnu.org/install/configure.html

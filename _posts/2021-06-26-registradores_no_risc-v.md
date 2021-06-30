@@ -2,7 +2,7 @@
 title: Registradores Risc-V
 date: 2021-06-26 8:00:00 -0300
 categories: [registradores]
-tags: [assembly, registradores, risc-v]
+tags: [assembly, registradores]
 math: false
 comments: false
 toc: true
