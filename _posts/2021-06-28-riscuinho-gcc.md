@@ -1,7 +1,7 @@
 ---
 redirect_from: /gcc
 title: Riscuinho GCC
-date: 2021-06-18 18:40:00 -0300
+date: 2021-06-28 18:40:00 -0300
 author: Carlos Delfino
 categories: [gcc]
 tags: [gcc, binutils, as, gdb]     # TAG names should always be lowercase
@@ -28,6 +28,7 @@ WITH_ABI ?= --with-abi=ilp32
 MULTILIB_GEN := rv32i-ilp32-rv32im-c
 
 NEWLIB_MULTILIB_NAMES := rv32imcv-ilp32
+```
 
 ## Issues
 
