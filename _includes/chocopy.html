@@ -9,7 +9,7 @@
     var Range = require('ace/range').Range;
 
     function makeEditor(container) {
-       $(container).wrap("<div class='{{page.chocopy.containerClass}}-container'></div>");
+       $(container).wrap("<div class='{{page.chocopy.containerClass| default: 'example' }}-container'></div>");
         var compileButton = $("<button class='compile-button'>{{ page.chocopy.button.text | default: 'Compilar para RISC-V' }}</button>");
         $(container).parent().prepend(compileButton);
        var editor = ace.edit(container, {
@@ -90,6 +90,6 @@
         })
     }
 
-$(".{{page.chocopy.containerClass}}").each((i, e) => makeEditor(e))
+$(".{{page.chocopy.containerClass | default: 'example' }}").each((i, e) => makeEditor(e))
 </script>
 {% endif %}
