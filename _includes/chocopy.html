@@ -10,72 +10,67 @@
 
     function makeEditor(container) {
        $(container).wrap("<div class='{{page.chocopy.containerClass| default: 'example' }}-container'></div>");
-        var compileButton = $("<button class='compile-button'>{{ page.chocopy.button.text | default: 'Compilar para RISC-V' }}</button>");
-        $(container).parent().prepend(compileButton);
+       var compileButton = $("<button class='compile-button'>{{ page.chocopy.button.text | default: 'Compilar para RISC-V' }}</button>");
+       $(container).parent().prepend(compileButton);
        var editor = ace.edit(container, {
-            theme: "ace/theme/github",
-            mode: "ace/mode/python",
-              fontSize: "1em"
-        });
+          theme: "ace/theme/github",
+          mode: "ace/mode/python",
+          fontSize: "1em"
+       });
+       var errorMarkers = []
+       editor.on('change', () => {
+          editor.session.clearAnnotations();
+          for (var marker of errorMarkers) {
+             editor.session.removeMarker(marker);
+          }
+          errorMarkers.length = 0;
+       });
 
-
-        var errorMarkers = []
-
-
-        editor.on('change', () => {
-            editor.session.clearAnnotations();
-            for (var marker of errorMarkers) {
-                editor.session.removeMarker(marker);
-            }
-            errorMarkers.length = 0;
-        });
-
-        compileButton.click(() => {
-            var code = editor.getValue();
-            var resultWindow = window.open('/venus.html?v=0.2.4' , '_blank');
-            if (resultWindow == null) {
-                console.error("Could not open new window...");
-                return; // Cannot show result
-            }
-            resultWindow.onload = () => resultWindow.codeMirror.setValue("# Compiling... Please be patient. This can take a few seconds.\n" +
-                "# (The first compilation takes the longest)");
+       compileButton.click(() => {
+          var code = editor.getValue();
+          var resultWindow = window.open('/venus.html?v=0.2.4' , '_blank');
+          if (resultWindow == null) {
+             console.error("Could not open new window...");
+             return; // Cannot show result
+          }
+          resultWindow.onload = () => resultWindow.codeMirror.setValue("# Compiling... Please be patient. This can take a few seconds.\n" +
+          "# (The first compilation takes the longest)");
             
-            $.ajax({
-                url: compileService, 
-                crossDomain: true,
-                type: "POST",
-                  contentType: "application/json; charset=utf-8",
-                  dataType: "json",
-                data: JSON.stringify({input: code}), 
-                success: function(result) {
-                    if (result.asm) {
-                        var asm = result.asm;
-                        console.log(resultWindow.codeMirror);
-                        //resultWindow.onload = () => {
-                            resultWindow.codeMirror.setValue("# Compiled ChocoPy Program to RISC-V assembly\n" +
-                            "# Execute (run or step-through) using the 'Simulator' tab above \n" +
-                            "# Output will appear on the bottom-left of the simulator\n" + asm);
-                        //}
-                    } else if (result.errors) {
-                        resultWindow.close();
-                        var annotations = []
+          $.ajax({
+             url: compileService, 
+             crossDomain: true,
+             type: "POST",
+             contentType: "application/json; charset=utf-8",
+             dataType: "json",
+             data: JSON.stringify({input: code}), 
+             success: function(result) {
+                           if (result.asm) {
+                              var asm = result.asm;
+                              console.log(resultWindow.codeMirror);
+                              resultWindow.codeMirror.setValue("# Compiled ChocoPy Program to RISC-V assembly\n" +
+                                 "# Execute (run or step-through) using the 'Simulator' tab above \n" +
+                                 "# Output will appear on the bottom-left of the simulator\n" + asm);
+                           } else if (result.errors) {
+                              resultWindow.close();
+                              var annotations = [];
 
-                        for (var error of result.errors.errors) { /* TODO: Unwrap extra errors in the AST node hierarchy */
-                            var loc = error.location;
-                            var msg = error.message;
-                            var startLine = loc[0] - 1;
-                            var startCol = loc[1] - 1;
-                            var endLine = loc[2] - 1;
-                            var endCol = loc[3] - 1;
-                            var range = new Range(startLine, startCol, endLine, endCol+1);
-                            errorMarkers.push(editor.session.addMarker(range, "compile-error-marker", "text", true));
+                              for (var error of result.errors.errors) { 
+                                 /* TODO: Unwrap extra errors in the AST node hierarchy */
+                                 var loc = error.location;
+                                 var msg = error.message;
+                                 var startLine = loc[0] - 1;
+                                 var startCol = loc[1] - 1;
+                                 var endLine = loc[2] - 1;
+                                 var endCol = loc[3] - 1;
+                                 var range = new Range(startLine, startCol, endLine, endCol+1);
+                                 errorMarkers.push(editor.session.addMarker(range, "compile-error-marker", "text", true));
 
-                            annotations.push({
-                                row: Math.min(Math.max(0, startLine), editor.session.getLength()-1),
-                                text: msg,
-                                type: "error"
-                            });
-                        }
+                                 annotations.push({
+                                    row: Math.min(Math.max(0, startLine), editor.session.getLength()-1),
+                                    text: msg,
+                                    type: "error"
+                                 });
+                           }
 
                         editor.session.setAnnotations(annotations);
                     } else {
