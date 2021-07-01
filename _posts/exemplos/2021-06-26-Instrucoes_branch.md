@@ -4,6 +4,7 @@ date: 2021-06-26 13:00:00 -0300
 categories: [exemplos]
 tags: [assembly, codigos, exemplos, addi, bne, beq, meneumonico]
 math: false
+pin: true
 comments: true
 toc: true
 mermaid: false
@@ -14,10 +15,9 @@ image:
 
 Instruções do tipo Branch no Assembly Risc-V, ou qualquer outro Assembly são usadas para construir algortimos similares a "If"
 
+O Exemplo abaixo foi criado abaixo foi criado pelo professor Fearghal Morgan da univeridade Nacional de Ireland em Galway e foi disponibilizada no curso de RISC-V no site https://vicilogic.com.
 
-# RISC-V branch instruction example 
-# Created by Fearghal Morgan, National University of Ireland, Galway
-# Creation date: Apr 2020
+
 
 Branch assembly instruction: 
   bne rs2, rs1, imm   i.e, relative branch (from current PC) if rs2 is not equal to rs1
@@ -70,7 +70,3 @@ fff08093
 fe009ee3
 fe000ae3
 
-============================
-Program binary formatted for use in vicilogic online RISC-V processor
-i.e, 8x32-bit instructions, format: m = mod(n/8)
-00300093fff08093fe009ee3fe000ae300000000000000000000000000000000
