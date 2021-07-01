@@ -16,19 +16,16 @@ image:
 
 Gcc e Binutils para o RISCuinho foram compilados multi-lib para **rv32i** com **ilp32**; **rv32im** com **ilp32** and **rv32imc** with **ilp32** que reusará este conjunto multi-lib. 
 
-configure --prefix=/opt/riscuinho --host=i686-riscuinho-linux-gnu  --program-prefix="riscuinho-" --with-multilib-generator="rv32i-ilp32-rv32im-c" --with-pkgversion="RISCuinho-GCC" --with-bugurl="https://riscuinho.github.io/gcc" --with-documentation-root-url="https://riscuinho.github.io/gcc" --with-changes-root-url="https://riscuinho.github.io/gcc"
+./configure --prefix=/opt/riscuinho --host=i686-riscuinho-linux-gnu  --program-prefix="riscuinho-" --with-multilib-generator="rv32ic-ilp32--m*v" --with-pkgversion="RISCuinho-GCC" --with-bugurl="https://riscuinho.github.io/gcc" --with-documentation-root-url="https://riscuinho.github.io/gcc" --with-changes-root-url="https://riscuinho.github.io/gcc"
 
+ - version: 11.1.0
 
-Edite o arquivo Makefile gerado e altere as linhas de forma que fiquem similares:
+ - multilib: . !march=rv32ic !march=rv32icv !march=rv32imc !march=rv32imcv !mabi=ilp32;rv32ic/ilp32 march=rv32ic !march=rv32icv !march=rv32imc !march=rv32imcv mabi=ilp32;
 
-```
-WITH_ARCH ?= --with-arch=rv32imc
-WITH_ABI ?= --with-abi=ilp32
+ - *multilib_defaults: march=rv64imafdc mabi=lp64d
 
-MULTILIB_GEN := rv32i-ilp32-rv32im-c
+ - *multilib_matches: march=rv32ic march=rv32ic;march=rv32icv march=rv32icv;march=rv32imc march=rv32imc;march=rv32imcv march=rv32imcv;mabi=ilp32 mabi=ilp32;
 
-NEWLIB_MULTILIB_NAMES := rv32imcv-ilp32
-```
 
 ## Issues
 
