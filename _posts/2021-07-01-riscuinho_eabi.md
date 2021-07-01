@@ -2,7 +2,7 @@
 title: RISCuinho EABI
 date: 2021-07-01 08:40:00 -0300
 categories: [EABI]
-tags: [Assembly, C, C++, ABI, EABI, GCC]
+tags: [assembly, c, cplusplus, abi, eabi, gcc]
 math: false
 comments: false
 toc: true
