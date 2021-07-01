@@ -1,18 +1,24 @@
 ---
 title: Configurando o GTKwave
 date: 2021-06-24 23:40:00 -0300
+update: 2021-07-01 11:15:00 -0300
 categories: [gtkwave]
 tags: [gtkwave, vcd, test, analise, verilog]
 math: false
 comments: false
 toc: true
-mermaid: true
+mermaid: false
 image:
  src: /assets/images/gtkwave/header_post_riscuinho.png
-
 ---
 
 Projetar hardware nos tempos atuais demandam simulações, não partimos apenas de calculos e ideias, sem dúvida estes são os primeiros passos, mas durante a simulação precisamos ter métodos para analisar os sinais gerados e a ferramenta GTKWave é a melhor e mais consagrada para tal tarefa, é capaz de carregar diversos formatos de arquivos, sendo o formato VCD (Value Change Dump) o mais comum.
+
+## Instalando o GTKWave
+
+para instalar o GTKWave não há segredo, no linux basta usar o comando de instalação nativo de sua distribuição, no caso das variantes Debian que usam `apt-get` basta usar `apt-get install gtkwave`.
+
+Para Windows você pode fazer o donwload em [https://sourceforge.net/projects/gtkwave/files/](https://sourceforge.net/projects/gtkwave/files/) e fazer o procedimento padrão de instalação.
 
 ## VCD (Value Change Dump)
 
