@@ -2,6 +2,13 @@
    chocopy
  -->
 {% if page.chocopy.enable %}
+<style>
+.{{page.chocopy.containerClass| default: 'example' }}{
+    min-height: 60vh;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+</style>
 <script>
     var baseUrl = "https://lobpsxdn4g.execute-api.us-east-2.amazonaws.com"
     var stage = "beta";
