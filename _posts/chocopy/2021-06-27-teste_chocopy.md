@@ -3,8 +3,9 @@ title: Teste Chocopy
 layout: chocopy
 date: 2021-06-27 20:00:01 -0300
 update: 2021-07-01 16:40:00 -0300
-categories: [chocopy]
+categories: [programação,chocopy]
 tags: [exemplos, python, chocopy, assembly, venus]
+search: false
 math: false
 comments: true
 toc: true
@@ -15,15 +16,13 @@ image:
 chocopy:
    enable: true
    button:
-      text: Compilar RISC-V
+      text: "Compilar RISC-V"
    containerClass: example
 ---
 
 Exemplo para teste.
 
-Infelizmente os scripts em JavaScript estão funcionando perfeitamente no servidor local, mas quando envio para o GitHub não aparece o Botão de compilação, não consigo achar o problema, apesar de ver um erro através do inspetor do navegador, este erro está impedindo que o script continue. Infelizmente ainda não sei como resolver este erro e porque ele só ocorre quando se usa o código pelo servidor do GitHub. ode ser algo com a versão do Jquery.
-
-De qualquer forma o ChocoPy pode ser testado no link: [https://riscuinho.github.io/venus](https://riscuinho.github.io/venus), neste novo simulador você tem uma aba chamada chocopy, onde você pode digitar códigos em Python simples (um subset do Python ou seja o Chocopy) e compilar para gerar assembly Risc-V, este código em breve poderá ser testado no RISCuinho, assim que eu implementar a extensão RV32M (Multiplicação e divisão de inteiros)
+Problemas de compatibilidade com jekyll resolvidos (jekyll-plugin-search), porém agora há um problema quanto a carga do layout e estilo/css.
 
 <pre class="example">
 # Search in a list

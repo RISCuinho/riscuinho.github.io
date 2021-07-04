@@ -6,26 +6,6 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  {% if page.chocopy.enable %}
-   <script
-      src="https://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"
-      crossDomain="true"></script>
-   <script src="/assets/js/ace.js" type="text/javascript" charset="utf-8"></script>
-   <style>
-   .{{page.chocopy.containerClass}}{
-          border: 1px solid black;
-          width: 50em;
-          height: 20em;
-        }
-
-        .compile-error-marker {
-            position: absolute;
-            background-color: rgba(255, 200, 200, 0.3);
-        }
-    </style>
-  {% endif %}
   {% if page.layout == 'home' or page.layout == 'post' %}
 
     {% if site.google_analytics.pv.proxy_endpoint %}
@@ -91,4 +71,7 @@
 
   {% include js-selector.html %}
 
+  {% if page.chocopy.enable %}
+  <script src="/assets/js/ace.js" type="text/javascript" charset="utf-8"></script>
+  {% endif %}
 </head>

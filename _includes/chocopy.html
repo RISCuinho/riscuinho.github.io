@@ -6,7 +6,7 @@
     var baseUrl = "https://lobpsxdn4g.execute-api.us-east-2.amazonaws.com"
     var stage = "beta";
     var compileService = baseUrl + "/" + stage + "/compile";
-    var Range = require('ace/range').Range;
+    var Range = ace.Range;
 
     function makeEditor(container) {
        $(container).wrap("<div class='{{page.chocopy.containerClass| default: 'example' }}-container'></div>");
