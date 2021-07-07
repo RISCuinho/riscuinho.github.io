@@ -19,7 +19,7 @@ order: 3
 <p>Os links geram comissões para que eu possa reverter para compras, assim eu posso manter também meu laborátorio atualizado e com a economia que faço eu posso investir escrevendo mais para o site e melhorando as publicações, as comissões são bem pequenas não mudam no valor que você compra, portanto você usando meu link você me ajuda muito.<p>
   <div id="indico" class="mt-2 mb-2 mb-sm-2">
     <div class="card-columns mb-1 randomize ">
-    {% for indico in indico_list %}
+    {% for indico in site.data.indico %}
       <div class="card ">
         <a href="{{ indico.href }}" class="card-img-top">
          <img class="card-img-top" src="{{ indico.img }}" alt="{{ indico.description.text | markdownify | strip_html | truncate: 200 }}" />
