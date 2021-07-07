@@ -9,13 +9,15 @@ order: 3
 <style>
 // https://jekyllcodex.org/without-plugin/randomize/#
 .randomize > * {display: none;}
-.randomize > *:nth-child(1), .randomize > *:nth-child(50) {display: block;}
+.randomize > *:nth-child(1), .randomize > *:nth-child({{site.data.indico.size}}) {display: block;}
 </style>
 <!-- The total size of related posts  -->
 
-{%assign indico_list = site.data.indico | sample: site.data.indico.size %}
+  <h1>Indicação de Compras - Ajude a Manter este Projeto</h1>
+<p>Abaixo seleciono no Aliexpress alguns itens que podem ser úteis para sua bancada de laboratório, contribuindo assim com suas pesquisas e integração de seu ambiente computacional.</p>
+<p>Os itens selecionados vão desde hubs USBs, adaptadores JTAGs para programação, extensores, ferramentas em geral da eletrônica, microcontroladores diversos, curiosidades, medidores como multimetros e até ociloscópios.</p>
+<p>Os links geram comissões para que eu possa reverter para compras, assim eu posso manter também meu laborátorio atualizado e com a economia que faço eu posso investir escrevendo mais para o site e melhorando as publicações, as comissões são bem pequenas não mudam no valor que você compra, portanto você usando meu link você me ajuda muito.<p>
   <div id="indico" class="mt-2 mb-2 mb-sm-2">
-    <h3>Indicação de Compras - Ajude a Manter este Projeto</h3>
     <div class="card-columns mb-1 randomize ">
     {% for indico in indico_list %}
       <div class="card ">
@@ -26,44 +28,7 @@ order: 3
       </div>
     {% endfor %}
     </div> <!-- .card-deck -->
-  </div> <!-- #related-posts -->
-<script>
+  </div>
 
-function isvisible(obj) {
-  return obj.offsetWidth > 0 && obj.offsetHeight > 0;
-}
-var shuffle = function() {
-      elements = document.querySelectorAll('.randomize');
-      Array.prototype.forEach.call(elements, function(parentel, i){
-        var children = parentel.children;
-        children = Array.prototype.slice.call(children, 0);
-        children = Array.prototype.sort.call(children, function(a, b) {
-            return Math.random() - 0.5;
-        });
-        for(var i = 0, l = children.length; i < l; i++) parentel.append(children[i]);
-      });
-};
-shuffle();
-
-elements = document.querySelectorAll('.randomize');
-Array.prototype.forEach.call(elements, function(parentel, i){
-    children = parentel.children;
-    Array.prototype.forEach.call(children, function(el, j){
-        if(isvisible(el)) {
-            if(el.getAttribute('data-src')) el.setAttribute('src',el.getAttribute('data-src'));
-            if(el.querySelector('img')) {
-                Array.prototype.forEach.call(el.querySelectorAll('img'), function(imgel, j){
-                    imgel.setAttribute('src',imgel.getAttribute('data-src'));
-                });
-            }
-            if(el.querySelector('*')) {
-                Array.prototype.forEach.call(el.querySelectorAll('*'), function(subel, j){
-                    subel.setAttribute('style',imgel.getAttribute('data-style'));
-                });
-            }
-        }
-    });
-});
-
-</script>
+  <script src="/assets/js/randomize.js" type="text/javascript" charset="utf-8"></script>
 
