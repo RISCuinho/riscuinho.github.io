@@ -1,3 +1,122 @@
+- 
+  title: Lattice Mini FPGA Core Board Development Board ICE40UL1K-CM36A (CDPGA-Bx)
+  categories: [all, mini fpga]
+  tags: [lattice, fpga, ultra small fpga, mini fpga, ice40ul1k-cm36a, cdpga-bx]
+  href: https://s.click.aliexpress.com/e/_Ab37YM
+  img: https://ae01.alicdn.com/kf/H71e7bfec8f2749f994f4c061951b27f9O.jpg_350x350.jpg
+  value: R$ 338,73 / lot 
+  description:
+     type: markdown
+     text: "CDCTL_BX_E is the smallest system board of Lattice's iCE40 UL series FPGA (ICE40UL1K-CM36A), (it is the CDCTL_BX bus controller unprogrammed version, the suffix E stands for Empty), on-board resources include:
+
+ -Lead out 12 IO ports (4 of which are multiplexed with configuration ports);
+
+ -16 M clock, higher frequency can be output via internal PLL;
+
+ -It can be used with only 3.3 V external power supply.
+
+#### Lattice devices are more convenient to use:
+
+ -Low price, small size, and many packaging options;
+
+ -It can be internally configured to prevent cracking;
+
+ -No private burning tool is needed, just use any FT232H series USB to SPI tool;
+
+ -Development software and burning tools are free and relatively compact, and support Linux and Windows platforms (Linux version development software is less than 400 MByte).
+
+#### The module supports 3 configuration methods:
+
+ -The SRAM is written by an external MCU or a burning tool, and the official SPI writing timing and sample code are provided by the FPGA. This method does not limit the number of writes. You can also switch the firmware at any time, but the firmware will be lost if power is off;
+
+ -Provided by the external SPI FLASH configuration chip, FPGA is the master, and the firmware is automatically read after power-on (FLASH data can be written directly by the burning tool);
+
+ -Programming the FPGA internal NVCM OTP memory can only be programmed once. After programming, it can be configured by the internal NVCM by default after power-on; and it can still be configured through the MCU, but the external SPI FLASH configuration method can no longer be used.
+
+#### For specific teaching and materials, please visit:
+
+https://github.com/dukelec/cdpga/blob/master/cdpga_b/readme_zh.md
+
+https://gitee.com/dukelec/cdpga/blob/master/cdpga_b/readme_zh.md
+
+Will continue to be updated.
+
+#### The soldering pin header can be made into a pluggable method:
+
+https://blog.d-l.io/solder-half-holes-pcb-with-pin-headers
+
+#### Introduction of solder-free adapter board:
+
+    github.com/dukelec/cdbus_doc/blob/master/cdbite/cdbite_zh.md
+
+    github.com/dukelec/cdpga/blob/master/cdpga_b/files/cdctl_bx_socket_sch.pdf
+
+or:
+
+    gitee.com/dukelec/cdpga/blob/master/cdpga_b/files/cdctl_bx_socket_sch.pdf
+
+If the adapter board requires an external flash configuration chip, the RS485 chip on the nose is not attached by default. This board was originally used for CDBUS communication testing.
+
+This is the sample price of <100 pcs. For large quantities, please contact customer service for quotation.
+
+If the customer service is not online, please email: d@d-l.io (replace (a) to @),
+
+Or call: +86-18576780518"
+-
+   title: Altera Ultra Small FPGA Core Board Development Board MAX10 10M02 (CDPGA-H3)
+   categories: [all, ultra small fpga]
+   tags: [altera, ultra small fpga, fpga, max10, 10m02, cdpga-h3]
+   href: https://s.click.aliexpress.com/e/_AFAStE
+   img: https://ae01.alicdn.com/kf/H2547cefa4235496ebb289915e2c2b2e7X.jpg_350x350.jpg
+   value: R$ 84,35
+   description: 
+      type: markdown
+      text: "Almost all pins are drawn (only nconfig related to configuration is not drawn, and it can only be input when it is multiplexed as ordinary IO).
+
+Part number: 10M02DCV36C8G/I7G (default C8G)
+
+ 
+#### Schematic diagram, device diagram:
+
+https://github.com/dukelec/cdpga/tree/master/cdpga_h
+
+https://gitee.com/dukelec/cdpga/tree/master/cdpga_h
+
+ 
+#### The method of making the solder header into a pluggable type:
+
+https://blog.d-l.io/solder-half-holes-pcb-with-pin-headers
+
+ 
+#### Manufacturing method of solder-free thimble adapter board:
+
+https://blog.d-l.io/diy-small-pcb-test-fixture
+
+My purpose of doing this is to make it easier for you to use your own products, so the price of non-samples will be much cheaper, and you can also buy files to produce by yourself (KiCad source files + production materials before and after the puzzle)."
+-
+   title: Placa de estudos e desenvolvimento para controle industrial stm32f407vet6 com rs485 duplo, ethernet, cam, iot
+   categories: [all]
+   tags: [stm32, rs485, ethernet, iot, stm32f4, stm32f407, cam]
+   href: https://s.click.aliexpress.com/e/_AYxPpO
+   img: https://ae01.alicdn.com/kf/H03e3bf5e3fef4e9eacbf1ec98168f765p.jpg_350x350.jpg
+   valor: R$ 154,89
+   description:
+      type: makrdown
+      text: "A placa de desenvolvimento adota um  microcontrolador stm32f407vet6 como o controlador principal, núcleo cortex-m4, com 1 interface rs232, 1 interface rs485, 2 interfaces cam, 1 interface ethernet, 1 interface de host usb, 1 interface de dispositivo usb, três botões de usuário, três indicadores de usuário. Muito apropriado para o desenvolvimento de aplicativos iot, desenvolvimento de servidor de gateway, desenvolvimento de comunicação de bus e controle industrial.
+
+* mcu stm32f407vet6-lqfp100
+* Chip de Ethernet DP83848-LQFP48
+* Relação da porta serial 1 rs232 com porta serial 1 pa9 pa10
+* Interface RS485 1 RS485 com interface de porta serial 2 PD5 PD6
+* 2 interfaces CAM com chip pd0 pd1/pb5 pb6
+* Cartão do tf 9-pin cartão pequeno, controlado pelo pc e pinos do pd
+* sem fio p3 leva à relação nrf24l01
+* Interface usb um mestre usb e um escravo usb
+* Armazenamento: as microplaquetas de memória 24c02 e 25q64 são instaladas
+* A relação do sensor de temperatura leva à relação do sensor ds18b20
+* Interface jtag correspondente ao jlink jtag
+* Botão k1, k2, k3 três botões do usuário
+* Indicador led1, led2, led3 três indicadores de usuário"
 -
    title: Lichee zero licheepi zero raspberry pi v3s placa de desenvolvimento mini Cortex-A7 placa núcleo placa de expansão zero
    categories: [all]
