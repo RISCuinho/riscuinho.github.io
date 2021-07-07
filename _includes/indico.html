@@ -80,7 +80,7 @@
       {% assign index = entry | plus: 0 %}
       {% assign indico = site.data.indico[index] %}
       <div class="card">
-        <a href="{{ indico.href }}" > {{ indico.title }}
+        <a href="{{ indico.href }}" > {{ indico.title | strip_html }}
            <img src="{{ indico.img }}" alt="{{ indico.description.text | markdownify | strip_html | truncate: 200 }}"/ >
         </a>
       </div>
