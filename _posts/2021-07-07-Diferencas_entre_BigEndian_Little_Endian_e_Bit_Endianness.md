@@ -4,7 +4,7 @@ categories: [programacao, cplusplus]
 tags: [big endian, little endian, endianness, bit endianness, lsb, msb, binário, byte, bit, numeração, endereçamento, manipulação de bits, manipulação e bytes, little end in, big end in]
 date: 2021-07-07 18:40:00 -0300
 author: Carlos Delfino
-math: false
+math: true
 comments: true
 toc: true
 mermaid: true
@@ -94,7 +94,7 @@ Vejamos agora como o mesmo número fica representado em um sistema Little Endian
 
 <figure>
 <figcaption>Representação gráfica do Little Endian para um DWord</figcaption>
-<img src="/assets/mages/programacao/ccplusplus/Little_Endian_Byte-DWord.png" />
+<img src="/assets/images/programacao/ccplusplus/Little_Endian_Byte-DWord.png" />
 </figure>
 
 Houve épocas que tal conflito quando transferindo dados entre computadores que usavam sistemas diferentes (chamdos bytesex), ou seja transmitindo de um sistema Little Endian para um sistema Big Endian a string **UNIX**, foi identificado como ***NUXI Problem***, ou seja o "problema **NUXI**", devido a inversão da String "UNIX".
@@ -141,7 +141,7 @@ int main(void)
 
 <figure>
 <figcaption>Resultado para um Word</figcaption>
-<img src="/images/programacao/ccplusplus/exemplo_little_endian_c_word.png" />
+<img src="/assets/images/programacao/ccplusplus/exemplo_little_endian_c_word.png" />
 </figure>
 
 --------
@@ -186,7 +186,7 @@ int main(void)
 
 <figure>
 <figcaption>Resultado para um DWord</figcaption>
-<img src="/images/programacao/ccplusplus/exemplo_little_endian_c_dword.png" />
+<img src="/assets/images/programacao/ccplusplus/exemplo_little_endian_c_dword.png" />
 </figure>
 
 ## Outras formas de representação
