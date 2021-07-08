@@ -14,9 +14,10 @@ order: 3
 <!-- The total size of related posts  -->
 
   <h1>Indicação de Compras - Ajude a Manter este Projeto</h1>
-<p>Abaixo seleciono no Aliexpress alguns itens que podem ser úteis para sua bancada de laboratório, contribuindo assim com suas pesquisas e integração de seu ambiente computacional.</p>
-<p>Os itens selecionados vão desde hubs USBs, adaptadores JTAGs para programação, extensores, ferramentas em geral da eletrônica, microcontroladores diversos, curiosidades, medidores como multimetros e até ociloscópios.</p>
+<p>Abaixo seleciono no *Aliexpress* alguns itens que podem ser úteis para sua bancada de laboratório de programadores e de quem é maker, contribuindo assim com suas pesquisas e integração de seu ambiente computacional.</p>
+<p>Os itens selecionados vão desde hubs USBs, adaptadores JTAGs para programação, extensores, ferramentas em geral da eletrônica, microcontroladores diversos, curiosidades, medidores como multímetros e até ociloscópios.</p>
 <p>Os links geram comissões para que eu possa reverter para compras, assim eu posso manter também meu laborátorio atualizado e com a economia que faço eu posso investir escrevendo mais para o site e melhorando as publicações, as comissões são bem pequenas não mudam no valor que você compra, portanto você usando meu link você me ajuda muito.<p>
+<p>Se não você não achar o que deseja, me envie no [whatsapp +55 85 985205490](https://wa.me/message/FMLUK6YYWLXHI1) a descrição o mais detalhada possível, e irei procurar para você.</p>
   <div id="indico" class="mt-2 mb-2 mb-sm-2">
     <div class="card-columns mb-1 randomize ">
     {% for indico in site.data.indico %}
