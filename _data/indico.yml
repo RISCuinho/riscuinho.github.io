@@ -171,16 +171,27 @@ Fonte de alimentação do furo do selo de 1.27mm (3.3 5 5v)
       type:
       text:
 -
-   title: Lichee tang fpga placa de desenvolvimento RISC-V
-   value: R$ 51,41 - 283,92
+   title: Placa de desenvolvimento Sipeed lichee tang primer fpga RISC-V 
+   value: R$ 54,31 - 265,74
    categories: [all]
-   tags: [all]
-   img: https://ae01.alicdn.com/kf/HTB1Txo6XcTxK1Rjy0Fgq6yovpXag.jpg_350x350.jpg
+   tags: [all, sipeed, lichee, tang, primer, fpga, ]
+   href: https://s.click.aliexpress.com/e/_9Jtv1W
+   img: https://ae01.alicdn.com/kf/He6c0b4a59eff4bfd9aea046989cae7f2J.jpg_350x350.jpg
+   description:
+      type:
+      text:
+- 
+   title: Sipeed Lichee Tang Nano FPGA Direct Plug Breadboard (original)
+   value: R$ 69,49 - 146,64
+   categories: [all]
+   tags: [all, sipeed, lichee, tang nano, fpga]
+   href: https://s.click.aliexpress.com/e/_9zTAhS
+   img: https://ae01.alicdn.com/kf/H1c45b0bcd97b48f98f4ebd08a5e451455.jpg_80x80.jpg
    description:
       type:
       text:
 -
-   title: Sipeed lichee tang nano mini placa de desenvolvimento para uso em protoboard
+   title: Sipeed lichee tang nano mini placa de desenvolvimento para uso em protoboard (clone)
    value: R$ 49,86 - 148,57
    categories: [all]
    tags: [all]
