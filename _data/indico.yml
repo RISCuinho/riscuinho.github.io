@@ -170,8 +170,38 @@ Fonte de alimentação do furo do selo de 1.27mm (3.3 5 5v)
    description:
       type:
       text:
+- 
+   title: Lichee Tang FPGA Development Board RISC-V Core (clone)
+   value: R$ 70,37 - 261,42
+   categories: [all]
+   tags: [lichee, tang, fpga]
+   href: https://s.click.aliexpress.com/e/_ATVm5K
+   img: https://ae01.alicdn.com/kf/H79ac610571a94d789de3f23a6b1e7d0dI.jpg_350x350.jpg
+   description:
+      type:
+      text: " Litchi uses Anlogic Technologies' EG4S20 as the core unit, 20K logic unit (LUT4/LUT5 hybrid architecture), approximately 130KB SRAM, built-in 32bit bit width 64MBit SDRAM, rich LVDS pin, built-in 12-bit 1MSPS ADC .
+
+- Lychee sugar, an extremely polished domestic open source RISC-V development board.
+- Litchi sugar was born in the tide of domestic chip oscillations. After three months of growth and transformation, it finally reached the stage of open source in July.
+- Litchi sugar not only takes on the expectations of open source developers, but also promotes the development and education related to RISC-V architecture in China, and introduces China to an excellent development board.
+
+  Development board features
+
+- FPC40P socket, can be connected to RGB LCD, VGA adapter board, high speed DAC module
+- FPC24P seat, can be connected to DVP camera, high speed ADC module
+- Resistive touch screen controller for I2C interface, used with RGB LCD
+- 3-channel DCDC power supply chip, stable and efficient power supply, independent adjustment of Bank0 IO level
+- FPGA configuration Flash, 8Mbit
+- User Flash, nor/nand optional
+- Onboard FPGA JTAG Download Debugger
+- RGB LED
+- The adjacent pins LVDS are drawn in the same length, and 8 GCLKs are taken out, and 8 ADCs are all taken out.
+- Double row pin spacing 900mil, compatible with breadboard development.
+- The half hole leads to an additional 40 IO and the entire board leads to 130+ IO.
+- Power connector: micro-USB
+- Number of PCB layers: 4 layers "
 -
-   title: Placa de desenvolvimento Sipeed lichee tang primer fpga RISC-V 
+   title: Placa de desenvolvimento Sipeed lichee tang primer fpga RISC-V (original)
    value: R$ 54,31 - 265,74
    categories: [all]
    tags: [all, sipeed, lichee, tang, primer, fpga, ]
