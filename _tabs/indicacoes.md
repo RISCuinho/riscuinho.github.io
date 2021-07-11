@@ -23,9 +23,11 @@ order: 3
     {% for indico in site.data.indico %}
       <div class="card ">
         <a href="{{ indico.href }}" class="card-img-top">
+         {% if indico.img %}
          <img class="card-img-top" src="{{ indico.img }}" alt="{{ indico.title| markdownify | strip_html | truncate: 200 }}" />
-        </a>
+         {% endif %}
          <h5 class="card-title"> {{ indico.title | strip_html }}</h5>
+        </a>
          <p>{{indico.description.text | markdownify }}</p>
       </div>
     {% endfor %}
