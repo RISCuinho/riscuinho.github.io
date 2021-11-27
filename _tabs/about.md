@@ -11,5 +11,5 @@ O Projeto tem como objetivo criar uma plataforma educacional para aulas de progr
 
 O projeto tem como foco a faixa etária apartir de 13 anos, sem limites podendo ser usado como curso de extensão para agregar conhecimento a outros cursos e a hobistas, portanto deve ser simples o suficiente para introdução no contexto, sem perder o poder das ferramentas apresentadas.
 
-Veja a página [Apoiando o projeto](/apoiadores/) para ver como pode colobarar com o projeto.
+Veja a página ["Indicadições"](/indicacoes/) para ver como pode colobarar com o projeto.
 

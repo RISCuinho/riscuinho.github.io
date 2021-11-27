@@ -1,4 +1,5 @@
 ---
+redirect_from: /apoiadores/
 title: Indicações
 icon: fas fa-info
 order: 3
